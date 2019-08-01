@@ -15,6 +15,9 @@
     --light-low: #ddd !important;
     --light-medium: #eeee !important;
     --light: #fff !important;
+
+    --font-main: 'Open Sans', sans-serif;
+    --font-secondary: 'Libre Baskerville', serif;
   }
 
   /* Estilo Global */
@@ -22,10 +25,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-main);
     font-size: 1.0rem;
 }
 
+.main {
+  width: 100%;
+}
 /* Componente - NavbarInfo */
 
 .navbar-info {
@@ -96,14 +102,14 @@
   font-size: 4.0rem;
   padding: 40px 0px 60px 0px;
   color: var(--light);
-  font-family: 'Libre Baskerville', serif;
+  font-family: var(--font-secondary);
 }
 
 .lm-box-hero > .subtitle{
   font-size: 1.0rem;
   padding: 0px 0px 40px 0px;
   color: var(--light-medium);
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-main);
   line-height: 1.8rem;
   max-width: 800px;
   margin: auto;
@@ -122,4 +128,159 @@
 .lm-box-hero >.lm-btn:hover {
   color: var(--secondary);
   background-color: var(--featured-dark);
+}
+
+/* Componente - SectionTitle */
+
+.lm-section-title {
+  width: 100%;
+  background: linear-gradient(90deg, var(--featured), var(--featured-dark));
+}
+.lm-title {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lm-title h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.75rem;
+  color: var(--light);
+  text-align: center;
+}
+.lm-title h3::before {
+  content: url('../img/icon-title.svg');
+  display: block;
+}
+
+.lm-section-title-secondary {
+  width: 100%;
+}
+.lm-title-secondary {
+  padding: 70px 0px;
+}
+.lm-title-secondary h3 {
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: 1.75rem;
+  color: var(--darker);
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+.lm-title-secondary p {
+  text-align: center;
+  margin: auto;
+  max-width: 700px;
+  font-weight: 100;
+  line-height: 1.8rem;
+}
+.lm-title-secondary p::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 20px auto 0px;
+  background-color: var(--secondary);
+}
+
+/* Componente - SectionAbout */
+.lm-about {
+  width: 100%;
+  height: 100%;
+}
+.lm-content-about {
+  padding: 70px 0px;
+  text-align: center;
+}
+
+.lm-content-about h3 {
+  font-family: var(--font-secondary);
+  color: var(--darker);
+  font-size: 1.75rem;
+  max-width: 700px;
+  display: block;
+  margin: auto;
+  padding-bottom: 40px;
+  font-weight: 900;
+}
+
+.lm-content-about p {
+  color: var(--dark-medium);
+  line-height: 1.8rem;
+  max-width: 750px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.lm-content-about > .lm-btn {
+  padding: 7px 30px;
+  background-color: var(--secondary);
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: var(--light);
+} 
+.lm-content-about > .lm-btn:hover {
+  background-color: var(--featured-dark);
+  color: var(--secondary);
+}
+
+/* Componente - occupation-area */
+
+.lm-occupation-area {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-medium);
+}
+
+.lm-box-item {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  padding: 40px 0px;
+}
+
+.lm-box-item > .icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: var(--featured-dark);
+  transition: 0.5s;
+}
+.lm-box-item:hover > .icon {
+  box-shadow: 0 0 0 400px var(--featured-dark);
+  background-color: var(--featured-dark);
+  transition: 0.5s;
+}
+.lm-box-item > .lm-content-item {
+  z-index: 1000;
+  position: relative;
+  transition: 0.5s;
+}
+.lm-box-item:hover > .lm-content-item {
+  color: var(--light-low);
+  transition: 0.5s;
+}
+
+.lm-content-item h4 {
+  padding: 20px 0px 20px 0px;
+  font-size: 1.50rem;
+}
+.lm-content-item p {
+  font-size: 0.875rem;
+  max-width: 70%;
+  margin: auto;
+  line-height: 1.8rem;
+  padding-bottom: 20px;
+} 
+.lm-content-item a {
+  text-transform: uppercase;
+  color: var(--secondary); 
+}
+.lm-content-item a:hover {
+  text-transform: uppercase;
+  color: var(--light); 
 }
