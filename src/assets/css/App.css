@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import '../../../node_modules/bulma/css/bulma.min.css';
+
+/* Variáveis */
+:root {
+    --featured: #111231 !important;
+    --featured-dark: #1E1D35 !important;
+    --secondary: #B88A34 !important;
+    --dark: #222222 !important;
+    --darker: #333333 !important;
+    --dark-medium: #555555 !important;
+    --dark-low: #777777 !important;
+    --light-low: #ddd !important;
+    --light-medium: #eeee !important;
+    --light: #fff !important;
+  }
+
+  /* Estilo Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0rem;
+}
+
+/* Componente - NavbarInfo */
+
+.navbar-info {
+  width: 100%;
+  height: 30px;
+}
+
+.content-navbar-info {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-infos {
+  width: 60%;
+  height: 100%;
+  display: flex;
+}
+.box-info {
+  margin-right: 30px;
+}
+.box-info i {
+  font-size: 0.8125rem;
+  margin-right: 5px;
+  color: var(--featured);
+}
+.box-info a {
+  font-size: 0.8125rem;
+  color: var(--featured);
+}
+.box-info a:hover {
+  color: var(--secondary);
+}
+
+.box-social i {
+  color: var(--featured);
+  margin-left: 20px;
+}
+.box-social i:hover {
+  color: var(--secondary);
+}
+
+/* Componente - Navbar */
+
+.navbar {
+  height: 70px;
+}
+
+/* Componente - Hero */
+
+.lm-hero-bg {
+  background-image: url('../img/bg-hero.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.lm-box-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 0px;
+}
+
+.lm-box-hero > .title{
+  font-size: 4.0rem;
+  padding: 40px 0px 60px 0px;
+  color: var(--light);
+  font-family: 'Libre Baskerville', serif;
+}
+
+.lm-box-hero > .subtitle{
+  font-size: 1.0rem;
+  padding: 0px 0px 40px 0px;
+  color: var(--light-medium);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.lm-box-hero >.lm-btn {
+  border: 0;
+  width: 250px;
+  margin: auto;
+  border-radius: 30px;
+  font-size: 1.0rem;
+  color: var(--light);
+  background-color: var(--secondary);
+}
+
+.lm-box-hero >.lm-btn:hover {
+  color: var(--secondary);
+  background-color: var(--featured-dark);
+}
