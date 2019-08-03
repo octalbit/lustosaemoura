@@ -18,6 +18,16 @@
 
     --font-main: 'Open Sans', sans-serif;
     --font-secondary: 'Libre Baskerville', serif;
+
+    --font-size-one: 4.0rem;
+    --font-size-two: 3.5rem;
+    --font-size-three: 3.0rem;
+    --font-size-four: 2.5rem;
+    --font-size-five: 2.0rem;
+    --font-size-six: 1.5rem;
+    --font-size-seven: 1.0rem;
+    --font-size-eight: 0.8125rem;
+    --font-size-nine: 0.625rem;
   }
 
   /* Estilo Global */
@@ -26,7 +36,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--font-main);
-    font-size: 1.0rem;
+    font-size: var(--font-size-seven);
 }
 
 .main {
@@ -56,12 +66,12 @@
   margin-right: 30px;
 }
 .box-info i {
-  font-size: 0.8125rem;
+  font-size: var(--font-size-eight);
   margin-right: 5px;
   color: var(--featured);
 }
 .box-info a {
-  font-size: 0.8125rem;
+  font-size: var(--font-size-eight);
   color: var(--featured);
 }
 .box-info a:hover {
@@ -99,14 +109,14 @@
 }
 
 .lm-box-hero > .title{
-  font-size: 4.0rem;
+  font-size: var(--font-size-one);
   padding: 40px 0px 60px 0px;
   color: var(--light);
   font-family: var(--font-secondary);
 }
 
 .lm-box-hero > .subtitle{
-  font-size: 1.0rem;
+  font-size: var(--font-size-seven);
   padding: 0px 0px 40px 0px;
   color: var(--light-medium);
   font-family: var(--font-main);
@@ -120,7 +130,7 @@
   width: 250px;
   margin: auto;
   border-radius: 30px;
-  font-size: 1.0rem;
+  font-size: var(--font-size-seven);
   color: var(--light);
   background-color: var(--secondary);
 }
@@ -144,7 +154,7 @@
 }
 .lm-title h3 {
   font-family: var(--font-secondary);
-  font-size: 1.75rem;
+  font-size: var(--font-size-six);
   color: var(--light);
   text-align: center;
 }
@@ -157,12 +167,12 @@
   width: 100%;
 }
 .lm-title-secondary {
-  padding: 70px 0px;
+  padding: 0px 0px 70px 0px;
 }
 .lm-title-secondary h3 {
   text-align: center;
   font-family: var(--font-secondary);
-  font-size: 1.75rem;
+  font-size: var(--font-size-six);
   color: var(--darker);
   font-weight: 900;
   padding-bottom: 20px;
@@ -196,7 +206,7 @@
 .lm-content-about h3 {
   font-family: var(--font-secondary);
   color: var(--darker);
-  font-size: 1.75rem;
+  font-size: var(--font-size-six);
   max-width: 700px;
   display: block;
   margin: auto;
@@ -230,6 +240,7 @@
   width: 100%;
   height: 100%;
   background-color: var(--light-medium);
+  padding: 70px 0px;
 }
 
 .lm-box-item {
@@ -267,10 +278,11 @@
 
 .lm-content-item h4 {
   padding: 20px 0px 20px 0px;
-  font-size: 1.50rem;
+  font-size: var(--font-size-seven);
+  font-weight: bold;
 }
 .lm-content-item p {
-  font-size: 0.875rem;
+  font-size: var(--font-size-eight);
   max-width: 70%;
   margin: auto;
   line-height: 1.8rem;
@@ -283,4 +295,82 @@
 .lm-content-item a:hover {
   text-transform: uppercase;
   color: var(--light); 
+}
+
+/* Componente - BlockQuote */
+.lm-block-quote {
+  width: 100%;
+  background-image: url('../img/bg-cites.jpg');
+}
+
+.lm-content-block-quote blockquote {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 70px 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lm-content-block-quote blockquote > p {
+  color: var(--secondary);
+
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-six);
+  font-style: italic;
+
+  max-width: 800px;
+  padding: 0px 0px 30px 0px;
+  margin: auto;
+}
+
+.lm-content-block-quote blockquote > cite {
+  color: var(--secondary);
+
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-seven);
+  font-style: italic;
+
+  padding: 20px 0px 0px 0px;
+}
+
+/* Componente - Lawyes */
+.lm-lawyes {
+  width: 100%;
+  height: 100%;
+}
+.lm-card-lawyes {
+  margin: 70px 0px;
+  border: 0px !important;
+  border-radius: 5px;
+  text-align: center;
+}
+.lm-info-lawyes h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--font-size-seven);
+  letter-spacing: .1rem;
+
+  color: var(--darker);
+}
+.lm-info-lawyes span {
+  padding-bottom: 20px !important;
+  text-transform: uppercase;
+  font-size: var(--font-size-eight);
+  letter-spacing: .1rem;
+
+  color: var(--dark-low);
+} 
+.lm-info-lawyes p a {
+  padding: 0px 0px 20px 0px;
+  color: var(--secondary);
+}
+.lm-social-icons-cord i {
+ margin: 20px;
+ color: var(--darker);
+}
+.lm-social-icons-cord i:hover {
+  color: var(--secondary);
 }

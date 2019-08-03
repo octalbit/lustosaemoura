@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SectionTitle(props) {
+export default function SectionTitle() {
     return (
         <section className="lm-section-title">
             <div className="container">
