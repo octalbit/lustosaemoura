@@ -1,13 +1,16 @@
 import React from 'react'
+// import ReactDOM from 'react-dom';
 
-export default function SectionTitle() {
+ const SectionTitle = ({text}) => {
     return (
         <section className="lm-section-title">
             <div className="container">
                 <div className="lm-title">
-                    <h3>Quem nós somos</h3>
+                    <h3>{text}</h3>
                 </div>
             </div>
         </section>
     )
 }
+
+export default SectionTitle

@@ -8,11 +8,11 @@ import Sectiontitle from '../components/SectionTitle';
 export default function Lawyes() {
     return (
         <section className="lm-lawyes">
-            <Sectiontitle />
+            <Sectiontitle text="Nossos advogados" />
             <div className="container">
-                <div className="columns">
-                    <div className="column">
-                        <div className="card lm-card-lawyes">
+                <div className="columns lm-card-lawyes">
+                    <div className="column ">
+                        <div className="card">
                             <div className="card-image">
                                 <figure className="image">
                                     <img src={Imgvic} alt="Vicente Lustosa" />
@@ -34,7 +34,7 @@ export default function Lawyes() {
                         </div>
                     </div>
                     <div className="column">
-                    <div className="card lm-card-lawyes">
+                    <div className="card ">
                             <div className="card-image">
                                 <figure className="image">
                                     <img src={Imgvic} alt="Vicente Lustosa" />
@@ -56,7 +56,7 @@ export default function Lawyes() {
                         </div>
                     </div>
                     <div className="column">
-                    <div className="card lm-card-lawyes">
+                    <div className="card ">
                             <div className="card-image">
                                 <figure className="image">
                                     <img src={Imgvic} alt="Vicente Lustosa" />
@@ -78,7 +78,7 @@ export default function Lawyes() {
                         </div>
                     </div>
                     <div className="column">
-                    <div className="card lm-card-lawyes">
+                    <div className="card">
                             <div className="card-image">
                                 <figure className="image">
                                     <img src={Imgvic} alt="Vicente Lustosa" />

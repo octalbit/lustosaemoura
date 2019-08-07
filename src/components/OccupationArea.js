@@ -13,7 +13,7 @@ import Icon8 from  '../assets/img/adm.svg';
 export default function OccupationArea() {
     return (
         <section className="lm-occupation-area">
-           <TitleSecondary />
+           <TitleSecondary text="Nossas áreas de atuação" />
             <div className="container">
                 <div className="lm-content-occupation-area">
                     <div className="columns">

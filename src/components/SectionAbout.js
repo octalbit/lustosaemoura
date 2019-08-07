@@ -5,7 +5,7 @@ import SectionTitle from './SectionTitle'
 export default function SectionAbout() {
     return (
         <section className="lm-about">
-            <SectionTitle text="Quem nós somos"/>
+            <SectionTitle text="Quem nós somos" />
             <div className="container">
                 <div className="lm-content-about">
                     <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>

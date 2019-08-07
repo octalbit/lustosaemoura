@@ -5,6 +5,8 @@ import SectionAbout from '../../components/SectionAbout';
 import OccupationArea from '../../components/OccupationArea';
 import BlockQuote from '../../components/BlockQuote';
 import Lawyes from '../../components/Lawyes';
+import News from '../../components/News';
+import Contact from '../../components/Contact';
 export default function Home() {
     return (
         <div className="main">
@@ -13,6 +15,8 @@ export default function Home() {
             <OccupationArea />
             <BlockQuote />
             <Lawyes />
+            <News />
+            <Contact />
         </div>
     )
 }

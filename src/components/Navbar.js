@@ -20,7 +20,7 @@ export default function Navbar() {
                             <span></span>
                         </span>
                     </div>
-                    <div id="navbarMenu" class="navbar-menu">
+                    <div id="navbarMenu" className="navbar-menu">
                         <div className="navbar-end">
                             <Link className="navbar-item"  to="/">Home</Link>
                             <Link className="navbar-item" to="/sobre">Sobre</Link>  
