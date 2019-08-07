@@ -1,43 +1,41 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import Select from 'react-select';
 // import { Link } from 'react-router-dom';
 import SectionTitle from './SectionTitle'
 
-const Contact = () => { 
-    constructor(props) {
-        super(props);
-        this.state = {
-            nome: '',
-            email: '',
-            telefone: '',
-            areaAtuacao: '',
-            msg: ''
-        };
-    
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-      };
+export default function Contact() {
 
-      handleChange(event) {
-        this.setState(
-            {
-                nome: event.target.nome,
-                email: event.target.email
-            }
-        );
-      };
+    const [nome,setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [telefone, setTelefone] = useState('');
+    const [areaAtuacao, setareaAtuacao] = useState('');
+    const [msg, setMsg] = useState('');  
     
-      handleSubmit(event) {
-        alert('Um nome foi enviado: ' );
-        event.preventDefault();
-      };
+    function handleSubmit(event) {
+      alert('Um nome foi enviado: ' );
+      console.log(nome);
+      console.log(email);
+      console.log(telefone);
+      console.log(areaAtuacao);
+      console.log(msg);
+      event.preventDefault();
+    };
     
+    const options = [
+        'Direito Empresarial',
+        'Direito da Familia',
+        'Direito Cívil',
+        'Direito do Trabalho',
+        'Direito Imobiliário',
+        'Direito Tributário',
+        'Direito Administrativo'
+    ];
 
     return (
         <section classname="lm-contact">
             <SectionTitle text="Solicite uma consulta" />
             <div className="container">
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={handleSubmit}>
                     <div className="columns">
                         <div className="column">
                             <div className="field">
@@ -46,8 +44,8 @@ const Contact = () => {
                                         className="input" 
                                         type="text" 
                                         placeholder="Nome"
-                                        value={this.state.nome} 
-                                        onChange={this.handleChange}
+                                        value={nome} 
+                                        onChange={nome => setNome(nome.target.value)} 
                                         />
                                 </div>
                             </div>
@@ -59,6 +57,8 @@ const Contact = () => {
                                         className="input" 
                                         type="text" 
                                         placeholder="Email"
+                                        value={email} 
+                                        onChange={email => setEmail(email.target.value)} 
                                         />
                                 </div>
                             </div>
@@ -72,6 +72,8 @@ const Contact = () => {
                                         className="input" 
                                         type="text" 
                                         placeholder="Telefone"
+                                        value={telefone} 
+                                        onChange={telefone => setTelefone(telefone.target.value)}
                                         />
                                 </div>
                             </div>
@@ -80,17 +82,13 @@ const Contact = () => {
                             <div className="field">
                                 <div className="control">
                                     <div className="select">
-                                        <select>
-                                            <option disabled >Área de Atuação: </option>
-                                            <option>Direito Empresarial</option>
-                                            <option>Direito da Familia</option>
-                                            <option>Direito Cívil</option>
-                                            <option>Direito do Trabalho</option>
-                                            <option>Direito Imobiliário</option>
-                                            <option>Direito Tributário</option>
-                                            <option>Direito à Saude</option>
-                                            <option>Direito Administrativo</option>
-                                        </select>
+                                        <Select
+                                            name="area-de-atuacao"
+                                            value={areaAtuacao}
+                                            options={options}
+                                            searchable={false}
+                                            onChange={event => setareaAtuacao(event)}
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -102,16 +100,18 @@ const Contact = () => {
                                 <div className="control">
                                     <textarea 
                                         className="textarea" 
-                                        placeholder="Menssagem">
-
+                                        placeholder="Menssagem"
+                                        value={msg} 
+                                        onChange={msg => setMsg(msg.target.value)}
+                                    >
                                     </textarea>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <button type='submit'>Enviar</button>
                 </form>
             </div>
         </section>
     ) 
 }
-export default Contact
