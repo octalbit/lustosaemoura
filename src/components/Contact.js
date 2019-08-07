@@ -1,23 +1,59 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
+import axios from 'axios';
 // import { Link } from 'react-router-dom';
 import SectionTitle from './SectionTitle'
 
 export default function Contact() {
 
-    const [nome,setNome] = useState('');
+    const [name,setName] = useState('');
     const [email, setEmail] = useState('');
     const [telefone, setTelefone] = useState('');
     const [areaAtuacao, setareaAtuacao] = useState('');
-    const [msg, setMsg] = useState('');  
+    const [message, setMessage] = useState('');  
     
     function handleSubmit(event) {
-      alert('Um nome foi enviado: ' );
-      console.log(nome);
+      alert('Um name foi enviado: ' );
+      axios.post('http://localhost:3000/email', {
+        name,  
+        message,
+        telefone,
+        email,
+        areaAtuacao
+      })
+    //   const transporter = nodemailer.createTransport({
+    //     service: 'Gmail',
+    //     auth: {
+    //         user: 'oioctalbit@gmail.com',
+    //         pass: 'Angical123'
+    //     }
+    // });
+    
+    // // NB! No need to recreate the transporter object. You can use
+    // // the same transporter object for all e-mails
+    
+    // // setup e-mail data with unicode symbols
+    // const mailOptions = {
+    //     from: 'Fred Foo ✔ <foo@blurdybloop.com>', // sender address
+    //     to: 'rafaelangical2@gmail.com, padrecicerometalurgica@hotmail.com', // list of receivers
+    //     subject: 'Hello ✔', // Subject line
+    //     text: 'Hello world ✔', // plaintext body
+    //     html: '<b>Hello world ✔</b>' // html body
+    // };
+    
+    // // send mail with defined transport object
+    // transporter.sendMail(mailOptions, function(error, info){
+    //     if(error){
+    //         return console.log(error);
+    //     }
+    //     console.log('Message sent: ' + info.response);
+    
+    // });
+      console.log(name);
       console.log(email);
       console.log(telefone);
       console.log(areaAtuacao);
-      console.log(msg);
+      console.log(message);
       event.preventDefault();
     };
     
@@ -44,8 +80,8 @@ export default function Contact() {
                                         className="input" 
                                         type="text" 
                                         placeholder="Nome"
-                                        value={nome} 
-                                        onChange={nome => setNome(nome.target.value)} 
+                                        value={name} 
+                                        onChange={name => setName(name.target.value)} 
                                         />
                                 </div>
                             </div>
@@ -101,8 +137,8 @@ export default function Contact() {
                                     <textarea 
                                         className="textarea" 
                                         placeholder="Menssagem"
-                                        value={msg} 
-                                        onChange={msg => setMsg(msg.target.value)}
+                                        value={message} 
+                                        onChange={msg => setMessage(msg.target.value)}
                                     >
                                     </textarea>
                                 </div>
