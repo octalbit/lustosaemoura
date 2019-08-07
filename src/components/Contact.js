@@ -13,7 +13,6 @@ export default function Contact() {
     const [message, setMessage] = useState('');  
     
     function handleSubmit(event) {
-      alert('Um name foi enviado: ' );
       axios.post('http://localhost:3000/email', {
         name,  
         message,
@@ -21,39 +20,7 @@ export default function Contact() {
         email,
         areaAtuacao
       })
-    //   const transporter = nodemailer.createTransport({
-    //     service: 'Gmail',
-    //     auth: {
-    //         user: 'oioctalbit@gmail.com',
-    //         pass: 'Angical123'
-    //     }
-    // });
-    
-    // // NB! No need to recreate the transporter object. You can use
-    // // the same transporter object for all e-mails
-    
-    // // setup e-mail data with unicode symbols
-    // const mailOptions = {
-    //     from: 'Fred Foo ✔ <foo@blurdybloop.com>', // sender address
-    //     to: 'rafaelangical2@gmail.com, padrecicerometalurgica@hotmail.com', // list of receivers
-    //     subject: 'Hello ✔', // Subject line
-    //     text: 'Hello world ✔', // plaintext body
-    //     html: '<b>Hello world ✔</b>' // html body
-    // };
-    
-    // // send mail with defined transport object
-    // transporter.sendMail(mailOptions, function(error, info){
-    //     if(error){
-    //         return console.log(error);
-    //     }
-    //     console.log('Message sent: ' + info.response);
-    
-    // });
-      console.log(name);
-      console.log(email);
-      console.log(telefone);
-      console.log(areaAtuacao);
-      console.log(message);
+      alert('Mensagem enviada com sucesso !' );
       event.preventDefault();
     };
     
