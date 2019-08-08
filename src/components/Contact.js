@@ -1,23 +1,29 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
+import axios from 'axios';
 // import { Link } from 'react-router-dom';
 import SectionTitle from './SectionTitle'
 
 export default function Contact() {
 
-    const [nome,setNome] = useState('');
+    const [name,setName] = useState('');
     const [email, setEmail] = useState('');
     const [telefone, setTelefone] = useState('');
     const [areaAtuacao, setareaAtuacao] = useState('');
-    const [msg, setMsg] = useState('');  
+    const [message, setMessage] = useState('');  
     
     function handleSubmit(event) {
-      alert('Um nome foi enviado: ' );
-      console.log(nome);
-      console.log(email);
-      console.log(telefone);
-      console.log(areaAtuacao);
-      console.log(msg);
+      if(email === '' || name === '' || telefone === '' || areaAtuacao === '' || message === ''){
+          alert('Preencha todos os campos ');
+      }
+      axios.post('https://calm-hamlet-35252.herokuapp.com/email', {
+        name,  
+        message,
+        telefone,
+        email,
+        areaAtuacao
+      })
+      alert('Mensagem enviada com sucesso !' );
       event.preventDefault();
     };
     
@@ -44,8 +50,9 @@ export default function Contact() {
                                         className="input" 
                                         type="text" 
                                         placeholder="Nome"
-                                        value={nome} 
-                                        onChange={nome => setNome(nome.target.value)} 
+                                        value={name} 
+                                        onChange={name => setName(name.target.value)} 
+                                        required
                                         />
                                 </div>
                             </div>
@@ -55,10 +62,11 @@ export default function Contact() {
                                 <div className="control">
                                     <input 
                                         className="input" 
-                                        type="text" 
+                                        type="email" 
                                         placeholder="Email"
                                         value={email} 
                                         onChange={email => setEmail(email.target.value)} 
+                                        required
                                         />
                                 </div>
                             </div>
@@ -70,10 +78,11 @@ export default function Contact() {
                                 <div className="control">
                                     <input 
                                         className="input" 
-                                        type="text" 
+                                        type="tel" 
                                         placeholder="Telefone"
                                         value={telefone} 
                                         onChange={telefone => setTelefone(telefone.target.value)}
+                                        required
                                         />
                                 </div>
                             </div>
@@ -88,6 +97,7 @@ export default function Contact() {
                                             options={options}
                                             searchable={false}
                                             onChange={event => setareaAtuacao(event)}
+                                            required
                                         />
                                     </div>
                                 </div>
@@ -101,8 +111,9 @@ export default function Contact() {
                                     <textarea 
                                         className="textarea" 
                                         placeholder="Menssagem"
-                                        value={msg} 
-                                        onChange={msg => setMsg(msg.target.value)}
+                                        value={message} 
+                                        onChange={msg => setMessage(msg.target.value)}
+                                        required
                                     >
                                     </textarea>
                                 </div>
