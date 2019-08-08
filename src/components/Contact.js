@@ -13,7 +13,7 @@ export default function Contact() {
     const [message, setMessage] = useState('');  
     
     function handleSubmit(event) {
-      axios.post('http://localhost:3000/email', {
+      axios.post('https://calm-hamlet-35252.herokuapp.com/email', {
         name,  
         message,
         telefone,
