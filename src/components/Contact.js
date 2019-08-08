@@ -41,13 +41,13 @@ export default function Contact() {
         <section classname="lm-contact">
             <SectionTitle text="Solicite uma consulta" />
             <div className="container">
-                <form onSubmit={handleSubmit}>
+                <form className="lm-form-contact" onSubmit={handleSubmit}>
                     <div className="columns">
                         <div className="column">
                             <div className="field">
                                 <div className="control">
                                     <input 
-                                        className="input" 
+                                        className="input lm-form-input" 
                                         type="text" 
                                         placeholder="Nome"
                                         value={name} 
@@ -61,7 +61,7 @@ export default function Contact() {
                             <div className="field">
                                 <div className="control">
                                     <input 
-                                        className="input" 
+                                        className="input lm-form-input" 
                                         type="email" 
                                         placeholder="Email"
                                         value={email} 
@@ -77,7 +77,7 @@ export default function Contact() {
                             <div className="field">
                                 <div className="control">
                                     <input 
-                                        className="input" 
+                                        className="input lm-form-input" 
                                         type="tel" 
                                         placeholder="Telefone"
                                         value={telefone} 
@@ -92,6 +92,7 @@ export default function Contact() {
                                 <div className="control">
                                     <div className="select">
                                         <Select
+                                            className="lm-form-select"
                                             name="area-de-atuacao"
                                             value={areaAtuacao}
                                             options={options}
@@ -109,7 +110,7 @@ export default function Contact() {
                             <div className="field">
                                 <div className="control">
                                     <textarea 
-                                        className="textarea" 
+                                        className="textarea lm-form-textarea" 
                                         placeholder="Menssagem"
                                         value={message} 
                                         onChange={msg => setMessage(msg.target.value)}
@@ -120,7 +121,12 @@ export default function Contact() {
                             </div>
                         </div>
                     </div>
-                    <button type='submit'>Enviar</button>
+                    <div className="columns">
+                        <div className="control">
+                            <button className="button is-link lm-btn-form" type='submit'>Enviar pedido</button>
+                        </div>
+                    </div>
+                    
                 </form>
             </div>
         </section>

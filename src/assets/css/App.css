@@ -410,3 +410,34 @@
   line-height: 1.8rem;
 }
 
+/* Componente - Contact */
+
+.lm-contact {
+  width: 100%;
+  height: 100%;
+}
+.lm-form-contact {
+  max-width: 800px;
+  padding: 70px 0px 70px 0px;
+  margin: auto;
+}
+
+.lm-form-input, .lm-form-textarea {
+  border: 1px solid var(--featured) !important;
+  padding: 0px 0px 0px 20px !important;
+  font-style: italic;
+}
+
+.lm-form-select {
+  display: block;
+  border: 1px solid var(--featured) !important;
+  width: 360px !important;
+}
+
+.lm-btn-form {
+  background-color: var(--secondary) !important;
+  border-radius: 50px !important;
+  text-transform: uppercase;
+  padding: 0px 20px !important;
+  margin: auto !important;
+}
