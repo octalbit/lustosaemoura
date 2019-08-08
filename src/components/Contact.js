@@ -13,6 +13,9 @@ export default function Contact() {
     const [message, setMessage] = useState('');  
     
     function handleSubmit(event) {
+      if(email === '' || name === '' || telefone === '' || areaAtuacao === '' || message === ''){
+          alert('Preencha todos os campos ');
+      }
       axios.post('https://calm-hamlet-35252.herokuapp.com/email', {
         name,  
         message,
@@ -49,6 +52,7 @@ export default function Contact() {
                                         placeholder="Nome"
                                         value={name} 
                                         onChange={name => setName(name.target.value)} 
+                                        required
                                         />
                                 </div>
                             </div>
@@ -58,10 +62,11 @@ export default function Contact() {
                                 <div className="control">
                                     <input 
                                         className="input" 
-                                        type="text" 
+                                        type="email" 
                                         placeholder="Email"
                                         value={email} 
                                         onChange={email => setEmail(email.target.value)} 
+                                        required
                                         />
                                 </div>
                             </div>
@@ -73,10 +78,11 @@ export default function Contact() {
                                 <div className="control">
                                     <input 
                                         className="input" 
-                                        type="text" 
+                                        type="tel" 
                                         placeholder="Telefone"
                                         value={telefone} 
                                         onChange={telefone => setTelefone(telefone.target.value)}
+                                        required
                                         />
                                 </div>
                             </div>
@@ -91,6 +97,7 @@ export default function Contact() {
                                             options={options}
                                             searchable={false}
                                             onChange={event => setareaAtuacao(event)}
+                                            required
                                         />
                                     </div>
                                 </div>
@@ -106,6 +113,7 @@ export default function Contact() {
                                         placeholder="Menssagem"
                                         value={message} 
                                         onChange={msg => setMessage(msg.target.value)}
+                                        required
                                     >
                                     </textarea>
                                 </div>
