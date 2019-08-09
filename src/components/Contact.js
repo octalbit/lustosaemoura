@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
 // import { Link } from 'react-router-dom';
-import SectionTitle from './SectionTitle'
+import SectionTitle from './SectionTitle';
+import Logo from '../assets/img/logo.svg';
 
 export default function Contact() {
 
@@ -122,12 +123,17 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="columns">
-                        <div className="control">
+                        <div className="control lm-control-box">
                             <button className="button is-link lm-btn-form" type='submit'>Enviar pedido</button>
                         </div>
                     </div>
                     
                 </form>
+                <div className="columns">
+                    <div className="lm-brand-contact">
+                        <img src={Logo} alt="Lustosa e Moura" />
+                    </div>
+                </div>
             </div>
         </section>
     ) 
