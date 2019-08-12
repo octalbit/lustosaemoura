@@ -1,0 +1,67 @@
+@import '../../assets/css/config.css';
+/* Estilo Pagina Sobre */
+.lm-about-page {
+  width: 100%;
+  height: 100%;
+}
+
+.lm-content-about-page {
+  .width: 100%;
+  padding: 70px 0px;
+}
+
+.lm-text-about-page {
+  width: 100%;
+}
+
+.lm-text-about-page h2 {
+  color: var(--dark);
+  font-size: var(--font-size-six);
+  font-weight: 900;
+  font-family: var(--font-secondary);
+  padding: 0px 25px 30px 0px;
+}
+
+.lm-text-about-page p {
+  color: var(--dark-medium);
+  line-height: 1.8rem;
+  padding: 0px 20px 0px 0px;
+}
+
+.lm-margin-btm {
+  margin-bottom: 20px;
+}
+
+.lm-img-about-page {
+  margin-top: 100px;
+  max-width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-image: url('../../assets/img/img-amarante.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.lm-desc-about-page {
+  background-color: var(--light-medium);
+  width: 100%;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.lm-desc-about-page h3 {
+  color: var(--secondary);
+  font-size: var(--font-size-six);
+  font-family: var(--font-secondary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lm-desc-about-page p {
+  color: var(--dark-medium);
+  line-height: 1.8rem;
+  text-align: center;
+}

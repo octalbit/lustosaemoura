@@ -1,43 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
-@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
-@import '../../../node_modules/bulma/css/bulma.min.css';
-
-/* Variáveis */
-:root {
-    --featured: #111231 !important;
-    --featured-dark: #1E1D35 !important;
-    --secondary: #B88A34 !important;
-    --dark: #222222 !important;
-    --darker: #333333 !important;
-    --dark-medium: #555555 !important;
-    --dark-low: #777777 !important;
-    --light-low: #ddd !important;
-    --light-medium: #eee !important;
-    --light: #fff !important;
-
-    --font-main: 'Open Sans', sans-serif;
-    --font-secondary: 'Libre Baskerville', serif;
-
-    --font-size-one: 4.0rem;
-    --font-size-two: 3.5rem;
-    --font-size-three: 3.0rem;
-    --font-size-four: 2.5rem;
-    --font-size-five: 2.0rem;
-    --font-size-six: 1.5rem;
-    --font-size-seven: 1.0rem;
-    --font-size-eight: 0.8125rem;
-    --font-size-nine: 0.625rem;
-  }
-
-  /* Estilo Global */
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-main);
-    font-size: var(--font-size-seven);
-}
+@import './config.css';
 
 .main {
   width: 100%;
@@ -55,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 1px 0px var(--darker);
 }
 
 .box-infos {
@@ -91,6 +53,17 @@
 .navbar {
   height: 70px;
 }
+.lm-menu a {
+  font-size: var(--font-size-sevem);
+  color: var(--featured);
+}
+.lm-menu a:hover {
+  color: var(--secondary) !important;
+}
+.lm-menu a:active {
+  color: var(--secondary) !important;
+}
+
 
 /* Componente - Hero */
 
@@ -140,6 +113,12 @@
   color: var(--secondary);
   background-color: var(--featured-dark);
   transition: 0.3s;
+}
+
+/* Componente - TitlePage */
+.lm-title-page {
+  width: 100%;
+  background-image: url('../img/title-page.jpg');
 }
 
 /* Componente - SectionTitle */
@@ -230,7 +209,7 @@
   border-radius: 30px;
   text-transform: uppercase;
   color: var(--light);
-} 
+}
 .lm-content-about > .lm-btn:hover {
   background-color: var(--featured-dark);
   color: var(--secondary);
@@ -289,14 +268,14 @@
   margin: auto;
   line-height: 1.8rem;
   padding-bottom: 20px;
-} 
+}
 .lm-content-item a {
   text-transform: uppercase;
-  color: var(--secondary); 
+  color: var(--secondary);
 }
 .lm-content-item a:hover {
   text-transform: uppercase;
-  color: var(--light); 
+  color: var(--light);
 }
 
 /* Componente - BlockQuote */
@@ -348,7 +327,7 @@
 }
 .lm-info-lawyes h4 {
   text-align: center;
-  padding-top: 30px; 
+  padding-top: 30px;
   text-transform: uppercase;
   font-size: var(--font-size-seven);
   letter-spacing: .1rem;
@@ -368,7 +347,7 @@
 .lm-info-lawyes p {
   display: block;
   text-align: center;
-} 
+}
 .lm-info-lawyes p a {
   color: var(--secondary);
 }
@@ -432,13 +411,14 @@
 }
 
 .lm-form-select {
-  display: block;
+  display: block !important;
+  width: 100px;
   border: 1px solid var(--featured) !important;
   width: 360px !important;
 }
 
 .lm-form-select > option {
-  color: var(--darker) !important;
+  color: #000 !important;
 }
 
 .lm-btn-form {
@@ -450,7 +430,7 @@
   transition: 0.3s;
 }
 .lm-btn-form:hover {
-  background-color: var(--featured) !important; 
+  background-color: var(--featured) !important;
   color: var(--secondary) !important;
   transition: 0.3s;
 }
@@ -544,7 +524,7 @@
 
 .lm-noticias-footer ul li i {
   color: var(--secondary);
-  margin-right: 10px;  
+  margin-right: 10px;
 }
 
 .lm-noticias-footer ul li {
@@ -554,7 +534,7 @@
 }
 
 .lm-copy {
-  padding-top: 30px; 
+  padding-top: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;

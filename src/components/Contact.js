@@ -91,7 +91,6 @@ export default function Contact() {
                         <div className="column">
                             <div className="field">
                                 <div className="control">
-                                    <div className="select">
                                         <Select
                                             className="lm-form-select"
                                             name="area-de-atuacao"
@@ -101,7 +100,6 @@ export default function Contact() {
                                             onChange={event => setareaAtuacao(event)}
                                             required
                                         />
-                                    </div>
                                 </div>
                             </div>
                         </div>

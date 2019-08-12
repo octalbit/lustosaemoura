@@ -2,13 +2,13 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import Brand from '../assets/img/brand.svg'
+import Brand from '../assets/img/brand.png'
 
 import NavbarInfo from './NavbarInfo'
 
 export default function Navbar() {
     return (
-        <div>
+        <>
             <NavbarInfo />
             <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="container">
@@ -21,14 +21,13 @@ export default function Navbar() {
                         </span>
                     </div>
                     <div id="navbarMenu" className="navbar-menu">
-                        <div className="navbar-end">
+                        <div className="navbar-end lm-menu">
                             <Link className="navbar-item"  to="/">Home</Link>
-                            <Link className="navbar-item" to="/sobre">Sobre</Link>  
+                            <Link className="navbar-item" to="/sobre">Sobre</Link>
                         </div>
                     </div>
                 </div>
             </nav>
-        </div>                
+        </>
     )
 }
-
