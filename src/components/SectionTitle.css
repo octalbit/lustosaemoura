@@ -1,0 +1,22 @@
+@import '../assets/css/config.css';
+
+.lm-section-title {
+    width: 100%;
+    background: linear-gradient(90deg, var(--featured), var(--featured-dark));
+  }
+  .lm-title {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lm-title h3 {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-six);
+    color: var(--light);
+    text-align: center;
+  }
+  .lm-title h3::before {
+    content: url('../assets/img/icon-title.svg');
+    display: block;
+  }

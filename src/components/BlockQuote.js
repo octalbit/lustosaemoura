@@ -1,4 +1,5 @@
 import React from 'react';
+import './BlockQuote.css'
 
 import Avatar from '../assets/img/avatar.svg'
 

@@ -1,4 +1,6 @@
 import React from 'react'
+import './OccupationArea.css'
+
 import { Link } from 'react-router-dom';
 import TitleSecondary from './TitleSecondary';
 import Icon1 from  '../assets/img/emp.svg';

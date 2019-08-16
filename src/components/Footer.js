@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Footer.css';
+
 import Brandft from '../assets/img/brand-ft.png';
 
 export default function Footer() {

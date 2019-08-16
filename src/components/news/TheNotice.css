@@ -1,0 +1,21 @@
+@import '../../assets/css/config.css';
+.lm-notice {
+  padding: 70px 0px;
+}
+.lm-btn-main {
+  display: block;
+  padding: 10px 30px;
+  color: var(--light);
+  background-color: var(--secondary);
+  border: 0px;
+  border-radius: 50px;
+  margin: auto;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+
+.lm-btn-main:hover {
+  transition: .3s;
+  background-color: var(--featured);
+  color: var(--secondary);
+}

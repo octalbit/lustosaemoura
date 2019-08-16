@@ -1,0 +1,59 @@
+@import '../assets/css/config.css';
+
+/* Contact */
+
+.lm-contact {
+    width: 100%;
+    height: 100%;
+  }
+  .lm-form-contact {
+    max-width: 800px;
+    padding: 70px 0px 70px 0px;
+    margin: auto;
+  }
+  
+  .lm-form-input, .lm-form-textarea {
+    border: 1px solid var(--featured) !important;
+    padding: 0px 0px 0px 20px !important;
+    font-style: italic;
+  }
+  
+  .lm-form-select {
+    display: block !important;
+    width: 100px;
+    border: 1px solid var(--featured) !important;
+    width: 360px !important;
+  }
+  
+  .lm-form-select > option {
+    color: #000 !important;
+  }
+  
+  .lm-btn-form {
+    background-color: var(--secondary) !important;
+    border-radius: 50px !important;
+    text-transform: uppercase;
+    padding: 0px 30px !important;
+    margin: auto !important;
+    transition: 0.3s;
+  }
+  .lm-btn-form:hover {
+    background-color: var(--featured) !important;
+    color: var(--secondary) !important;
+    transition: 0.3s;
+  }
+  
+  .lm-control-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px 0px 0px;
+  }
+  .lm-brand-contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px 70px 0px;
+  }

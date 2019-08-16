@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css'
 
 import { Link } from 'react-router-dom';
 
@@ -24,6 +25,7 @@ export default function Navbar() {
                         <div className="navbar-end lm-menu">
                             <Link className="navbar-item"  to="/">Home</Link>
                             <Link className="navbar-item" to="/sobre">Sobre</Link>
+                            <Link className="navbar-item" to="/noticias">Notícias</Link>
                         </div>
                     </div>
                 </div>

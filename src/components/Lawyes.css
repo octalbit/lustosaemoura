@@ -1,0 +1,48 @@
+@import '../assets/css/config.css';
+
+/* Lawyes */
+
+.lm-lawyes {
+    width: 100%;
+    height: 100%;
+  }
+  .lm-card-lawyes {
+    padding: 70px 0px;
+  }
+  .lm-info-lawyes h4 {
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: var(--font-size-seven);
+    letter-spacing: .1rem;
+  
+    color: var(--darker);
+  }
+  .lm-info-lawyes span {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px !important;
+    text-transform: uppercase;
+    font-size: var(--font-size-eight);
+    letter-spacing: .1rem;
+  
+    color: var(--dark-low);
+  }
+  .lm-info-lawyes p {
+    display: block;
+    text-align: center;
+  }
+  .lm-info-lawyes p a {
+    color: var(--secondary);
+  }
+  .lm-social-icons-cord {
+    display: block;
+    text-align: center;
+  }
+  .lm-social-icons-cord i {
+   margin: 20px;
+   color: var(--darker);
+  }
+  .lm-social-icons-cord i:hover {
+    color: var(--secondary);
+  }

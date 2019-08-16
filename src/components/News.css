@@ -1,0 +1,31 @@
+@import '../assets/css/config.css';
+
+/* News */
+
+.lm-news {
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-medium);
+    padding: 70px 0px;
+  }
+  
+  .card {
+    box-shadow: 0 0px 0px !important ;
+    background-color: transparent !important;
+  }
+  
+  .card-content {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .lm-title-info-news > h3{
+    font-family: var(--font-secondary);
+    color: var(--secondary);
+    padding: 30px 0px 20px 0px;
+    line-height: 1.8rem;
+  }
+  .lm-desc-info-news p {
+    font-size: var(--font-size-eight);
+    line-height: 1.8rem;
+  }

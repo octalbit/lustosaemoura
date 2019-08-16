@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css'
 
 import Hero from '../../components/Hero';
 import SectionAbout from '../../components/SectionAbout';

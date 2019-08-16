@@ -1,0 +1,18 @@
+@import '../assets/css/config.css';
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+  }
+  .lm-menu a {
+    font-size: var(--font-size-sevem);
+    color: var(--featured);
+  }
+  .lm-menu a:hover {
+    color: var(--secondary) !important;
+  }
+  .lm-menu a:active {
+    color: var(--secondary) !important;
+  }
+  

@@ -1,4 +1,6 @@
 import React from 'react'
+import './SectionAbout.css'
+
 import { Link } from 'react-router-dom';
 import SectionTitle from './SectionTitle'
 

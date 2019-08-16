@@ -1,4 +1,5 @@
 import React from 'react'
+import './TitlePage.css'
 // import ReactDOM from 'react-dom';
 
  const TitlePage = ({text}) => {

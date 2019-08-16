@@ -1,4 +1,6 @@
 import React from 'react'
+import './Hero.css'
+
 import { Link } from 'react-router-dom';
 
 import Icon from '../assets/img/libra.svg' 

@@ -1,0 +1,65 @@
+@import '../assets/css/config.css';
+
+/* Footer */
+
+.lm-occupation-area {
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-medium);
+    padding: 70px 0px;
+  }
+  
+  .lm-box-item {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    padding: 40px 0px;
+  }
+  
+  .lm-box-item > .icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: var(--featured-dark);
+    transition: 0.5s;
+  }
+  .lm-box-item:hover > .icon {
+    box-shadow: 0 0 0 400px var(--featured-dark);
+    background-color: var(--featured-dark);
+    transition: 0.3s;
+  }
+  .lm-box-item > .lm-content-item {
+    z-index: 1000;
+    position: relative;
+    transition: 0.3s;
+  }
+  .lm-box-item:hover > .lm-content-item {
+    color: var(--light-low);
+    transition: 0.3s;
+  }
+  
+  .lm-content-item h4 {
+    padding: 20px 0px 20px 0px;
+    font-size: var(--font-size-seven);
+    font-weight: bold;
+  }
+  .lm-content-item p {
+    font-size: var(--font-size-eight);
+    max-width: 70%;
+    margin: auto;
+    line-height: 1.8rem;
+    padding-bottom: 20px;
+  }
+  .lm-content-item a {
+    text-transform: uppercase;
+    color: var(--secondary);
+  }
+  .lm-content-item a:hover {
+    text-transform: uppercase;
+    color: var(--light);
+  }
+  

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
+import './Contact.css';
 // import { Link } from 'react-router-dom';
 import SectionTitle from './SectionTitle';
 import Logo from '../assets/img/logo.svg';

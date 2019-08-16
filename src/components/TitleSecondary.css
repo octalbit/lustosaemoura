@@ -1,0 +1,32 @@
+@import '../assets/css/config.css';
+
+/* Footer */
+.lm-section-title-secondary {
+    width: 100%;
+  }
+  .lm-title-secondary {
+    padding: 0px 0px 70px 0px;
+  }
+  .lm-title-secondary h3 {
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-six);
+    color: var(--darker);
+    font-weight: 900;
+    padding-bottom: 20px;
+  }
+  .lm-title-secondary p {
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+    font-weight: 100;
+    line-height: 1.8rem;
+  }
+  .lm-title-secondary p::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto 0px;
+    background-color: var(--secondary);
+  }

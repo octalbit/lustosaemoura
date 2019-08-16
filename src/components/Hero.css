@@ -1,0 +1,51 @@
+@import '../assets/css/config.css';
+
+/* Hero */
+
+.lm-hero-bg {
+    background-image: url('../assets/img/bg-hero.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .lm-box-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px;
+  }
+  
+  .lm-box-hero > .title{
+    font-size: var(--font-size-one);
+    padding: 40px 0px 60px 0px;
+    color: var(--light);
+    font-family: var(--font-secondary);
+  }
+  
+  .lm-box-hero > .subtitle{
+    font-size: var(--font-size-seven);
+    padding: 0px 0px 40px 0px;
+    color: var(--light-medium);
+    font-family: var(--font-main);
+    line-height: 1.8rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .lm-box-hero >.lm-btn {
+    border: 0;
+    width: 250px;
+    margin: auto;
+    border-radius: 30px;
+    font-size: var(--font-size-seven);
+    color: var(--light);
+    background-color: var(--secondary);
+    transition: 0.3s;
+  }
+  
+  .lm-box-hero >.lm-btn:hover {
+    color: var(--secondary);
+    background-color: var(--featured-dark);
+    transition: 0.3s;
+  }

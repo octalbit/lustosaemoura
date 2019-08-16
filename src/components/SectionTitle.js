@@ -1,4 +1,5 @@
 import React from 'react'
+import './SectionTitle.css'
 // import ReactDOM from 'react-dom';
 
  const SectionTitle = ({text}) => {

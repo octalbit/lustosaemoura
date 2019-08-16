@@ -1,0 +1,43 @@
+@import '../assets/css/config.css';
+
+/* Comp About */
+
+.lm-about {
+    width: 100%;
+    height: 100%;
+  }
+  .lm-content-about {
+    padding: 70px 0px;
+    text-align: center;
+  }
+  
+  .lm-content-about h3 {
+    font-family: var(--font-secondary);
+    color: var(--darker);
+    font-size: var(--font-size-six);
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    padding-bottom: 40px;
+    font-weight: 900;
+  }
+  
+  .lm-content-about p {
+    color: var(--dark-medium);
+    line-height: 1.8rem;
+    max-width: 750px;
+    margin: auto;
+    padding-bottom: 60px;
+  }
+  
+  .lm-content-about > .lm-btn {
+    padding: 7px 30px;
+    background-color: var(--secondary);
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: var(--light);
+  }
+  .lm-content-about > .lm-btn:hover {
+    background-color: var(--featured-dark);
+    color: var(--secondary);
+  }

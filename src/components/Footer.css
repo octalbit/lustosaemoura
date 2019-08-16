@@ -1,0 +1,100 @@
+@import '../assets/css/config.css';
+
+/* Footer */
+
+.lm-footer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--featured);
+    padding: 70px 0px;
+  }
+  
+  .lm-content-footer {
+    box-shadow: 0px 1px 0px var(--featured-dark);
+    padding-bottom: 30px;
+  }
+  
+  .lm-footer-sobre {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .lm-title-footer {
+    font-family: var(--font-secondary);
+    font-weight: lighter;
+    font-size: var(--font-size-six);
+    color: var(--secondary);
+    padding: 0px 0px 30px 0px;
+  }
+  
+  .lm-footer-sobre > p {
+    color: var(--light);
+    line-height: 1.8rem;
+    padding: 0px 10px 30px 0px;
+  }
+  
+  .lm-footer-sobre > .lm-btn {
+    color: var(--secondary);
+    padding: 8px 40px;
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+  
+  .lm-footer-sobre > .lm-btn:hover {
+    color: var(--featured);
+    background-color: var(--secondary);
+    transition: 0.3s;
+  }
+  
+  .lm-footer-links > ul li i {
+    color: var(--secondary);
+    margin-right: 10px;
+  }
+  .lm-footer-links > ul li {
+    padding: 0px 0px 5px 0px;
+  }
+  .lm-footer-links > ul li a {
+    color: var(--light);
+  }
+  .lm-footer-links > ul li a:hover {
+    color: var(--secondary);
+  }
+  
+  .lm-footer-contact p {
+    color: var(--light);
+    padding: 0px 0px 8px 0px;
+  }
+  
+  .lm-footer-contact p strong {
+    color: var(--light);
+  }
+  
+  .lm-noticias-footer ul li i {
+    color: var(--secondary);
+    margin-right: 10px;
+  }
+  
+  .lm-noticias-footer ul li {
+    color: var(--light);
+    padding: 0px 0px 8px 0px;
+    font-family: var(--font-secondary);
+  }
+  
+  .lm-copy {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lm-copy p {
+    color: var(--light);
+  }
+  
+  .lm-copy img {
+   max-width: 120px;
+  }
+  
