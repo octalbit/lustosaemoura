@@ -1,0 +1,25 @@
+@import '../../assets/css/config.css';
+.lm-content-contact {
+  padding: 70px 0px;
+}
+
+.lm-content-contact h3 {
+  color: var(--secondary);
+  font-family: var(--font-secondary);
+  font-size:  var(--font-size-six);
+  font-weight: 900;
+}
+
+.lm-content-contact p {
+  padding: 20px 0px 0px 0px;
+}
+
+.lm-content-contact ul {
+  display: flex;
+  margin-top: 20px;
+}
+
+.lm-content-contact ul li i {
+  color: var(--secondary);
+  margin: 0px 10px;
+}
