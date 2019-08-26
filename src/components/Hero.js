@@ -3,7 +3,7 @@ import './Hero.css'
 
 import { Link } from 'react-router-dom';
 
-import Icon from '../assets/img/libra.svg' 
+import Icon from '../assets/img/libra.svg'
 
 export default function Hero() {
     return (
@@ -13,13 +13,13 @@ export default function Hero() {
                     <img className="img-title" src={Icon} alt="Lustosa e Moura" />
                     <h1 className="title">
                         Bem-vindo à Lustosa e Moura
-                    </h1>  
+                    </h1>
                     <p className="subtitle">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 
-                    </p>  
+                    Somos focados na excelência do atendimento a cada cliente, proporcionando-lhe o conforto de estar sempre bem informado de suas causas e seguro de que a estas os sócios lhe emprestam alta competência técnica, desenvolvendo estratégias específicas, bem como atuam dentro de rigorosa ética. 
+                    </p>
                     <Link className="button lm-btn" href="#">Como posso ajudar?</Link>
-                </div>                
+                </div>
             </div>
         </header>
     )
-} 
+}

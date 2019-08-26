@@ -15,7 +15,10 @@ import Icon8 from  '../assets/img/adm.svg';
 export default function OccupationArea() {
     return (
         <section className="lm-occupation-area">
-           <TitleSecondary text="Nossas áreas de atuação" />
+           <TitleSecondary
+              text="Nossas áreas de atuação"
+              subtext="Nosso Escritório atua em toda região (especialmente no estado do Piauí) e em todas as instâncias, incluindo o Superior Tribunal de Justiça e o Supremo Tribunal Federal."
+            />
             <div className="container">
                 <div className="lm-content-occupation-area">
                     <div className="columns">
@@ -26,8 +29,8 @@ export default function OccupationArea() {
                                 </div>
                                 <div className="lm-content-item">
                                     <h4>Direito Empresarial</h4>
-                                    <p>There are many variations of passages of Lorem Ipsum looking at its layout.</p>
-                                    <Link to="">Mais sobre</Link>
+                                    <p>É o ramo do direito que estuda as relações que envolvem a empresa e o empresário.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -38,8 +41,8 @@ export default function OccupationArea() {
                                 </div>
                                 <div className="lm-content-item">
                                     <h4>Direito da Familia</h4>
-                                    <p>There are many variations of passages of Lorem Ipsum looking at its layout.</p>
-                                    <Link to="">Mais sobre</Link>
+                                    <p>Ramo que trata das relações familiares, ou seja, estabelece as normas de convivência familiar.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -50,8 +53,8 @@ export default function OccupationArea() {
                                 </div>
                                 <div className="lm-content-item">
                                     <h4>Direito Cívil</h4>
-                                    <p>There are many variations of passages of Lorem Ipsum looking at its layout.</p>
-                                    <Link to="">Mais sobre</Link>
+                                    <p>Elaboração e análise de contratos Direito de família Direito das sucessões Planejamento familiar.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -62,8 +65,8 @@ export default function OccupationArea() {
                                 </div>
                                 <div className="lm-content-item">
                                     <h4>Direito do Trabalho</h4>
-                                    <p>There are many variations of passages of Lorem Ipsum looking at its layout.</p>
-                                    <Link to="">Mais sobre</Link>
+                                    <p>Profunda experiência na orientação e na elaboração de contratos individuais e coletivos de trabalho.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -76,8 +79,8 @@ export default function OccupationArea() {
                                 </div>
                                 <div className="lm-content-item">
                                     <h4>Direito Imobiliário</h4>
-                                    <p>There are many variations of passages of Lorem Ipsum looking at its layout.</p>
-                                    <Link to="">Mais sobre</Link>
+                                    <p>Sólida experiência em transações imobiliárias por toda a região, prestando serviços para todas as empresas.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -88,8 +91,8 @@ export default function OccupationArea() {
                                 </div>
                                 <div className="lm-content-item">
                                     <h4>Direito Tributário</h4>
-                                    <p>There are many variations of passages of Lorem Ipsum looking at its layout.</p>
-                                    <Link to="">Mais sobre</Link>
+                                    <p>Auxílio e elaboração de planejamento fiscal, destacando a analise de aspectos tributários e previdenciários.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -100,8 +103,8 @@ export default function OccupationArea() {
                                 </div>
                                 <div className="lm-content-item">
                                     <h4>Direito à Saude</h4>
-                                    <p>There are many variations of passages of Lorem Ipsum looking at its layout.</p>
-                                    <Link to="">Mais sobre</Link>
+                                    <p>Defendemos processos decorrentes de erros médicos, onde se discute indenização, cumulada ou não com dano moral.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -112,12 +115,12 @@ export default function OccupationArea() {
                                 </div>
                                 <div className="lm-content-item">
                                     <h4>Direito Administrativo</h4>
-                                    <p>There are many variations of passages of Lorem Ipsum looking at its layout.</p>
-                                    <Link to="">Mais sobre</Link>
+                                    <p>Nossos serviços incluem consultoria administrativa e atuação no contencioso.</p>
+                                  
                                 </div>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </section>
