@@ -15,9 +15,9 @@ export default function Hero() {
                         Bem-vindo à Lustosa e Moura
                     </h1>
                     <p className="subtitle">
-                    Somos focados na excelência do atendimento a cada cliente, proporcionando-lhe o conforto de estar sempre bem informado de suas causas e seguro de que a estas os sócios lhe emprestam alta competência técnica, desenvolvendo estratégias específicas, bem como atuam dentro de rigorosa ética. 
+                    Somos focados na excelência do atendimento a cada cliente, proporcionando-lhe o conforto de estar sempre bem informado de suas causas e seguro de que a estas os sócios lhe emprestam alta competência técnica, desenvolvendo estratégias específicas, bem como atuam dentro de rigorosa ética.
                     </p>
-                    <Link className="button lm-btn" href="#">Como posso ajudar?</Link>
+                    <Link className="button lm-btn" to="/contatos">Como posso ajudar?</Link>
                 </div>
             </div>
         </header>

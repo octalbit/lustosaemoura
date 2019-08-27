@@ -27,7 +27,9 @@ export default props =>
 							</p>
 						</div>
 					</div>
-					<div className="column"><FormSendEmail /></div>
+					<div className="column">
+						<FormSendEmail />
+					</div>
 				</div>
 			</div>
 		</div>

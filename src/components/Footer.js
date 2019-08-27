@@ -13,7 +13,7 @@ export default function Footer() {
 						<div className="lm-footer-sobre">
 							<h3 className="lm-title-footer">Sobre</h3>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-							<Link to="/sobre" className="lm-btn">Consulta</Link>
+							<Link to="/contatos" className="lm-btn">Consulta</Link>
 						</div>
 					</div>
 					<div className="column">
@@ -39,7 +39,7 @@ export default function Footer() {
 								<li><a target="blanck" href="https://www.mppi.mp.br/internet/"><i class="fas fa-caret-right"></i> MP-PI</a></li>
 								<li><a target="blanck" href="http://www.mpf.mp.br/"><i class="fas fa-caret-right"></i> MPF</a></li>
 							</ul>
-						</div>	
+						</div>
 					</div>
 					<div className="column">
 						<div className="lm-noticias-footer">
