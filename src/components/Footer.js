@@ -111,9 +111,9 @@ export default function Footer() {
 				</div>
 			</div>
 		</footer>
-<<<<<<< HEAD
+
 	)
-=======
-	);
->>>>>>> 521c8aee900984f2d41b2532c2f537c1ffa47786
+
+
+
 }
