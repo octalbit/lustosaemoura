@@ -1,88 +1,57 @@
-import React from 'react';
-import './News.css'
+import React, { useEffect, useState } from 'react';
+import './News.css';
 
 // import { Link } from 'react-router-dom';
 
 import Imgnotice from '../assets/img/img-notice.jpg';
 
 import TitleSecundary from './TitleSecondary';
+import axios from 'axios';
 
-const News = () => {
-    return (
-        <section className="lm-news">
-            <TitleSecundary text="Notícias" />
-            <div className="container">
-                <div className="columns">
-                    <div className="column ">
-                        <div className="card">
-                            <div className="card-image">
-                                <figure className="image">
-                                    <img src={Imgnotice} alt="Vem da Api" />
-                                </figure>
-                            </div>
-                            <div className="card-content">
-                                <div className="lm-content-news">
-                                    <div className="lm-title-info-news">
-                                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
-                                        
-                                    </div>
-                                    <div className="lm-desc-info-news">
-                                        <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>   
-                    </div>
-                    <div className="column">
-                        <div className="card">
-                            <div className="card-image">
-                                <figure className="image">
-                                    <img src={Imgnotice} alt="Vem da Api" />
-                                </figure>
-                            </div>
-                            <div className="card-content">
-                                <div className="lm-content-news">
-                                    <div className="lm-title-info-news">
-                                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
-                                        
-                                    </div>
-                                    <div className="lm-desc-info-news">
-                                        <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>       
-                    </div>
-                    <div className="column">
-                        <div className="card">
-                            <div className="card-image">
-                                <figure className="image">
-                                    <img src={Imgnotice} alt="Vem da Api" />
-                                </figure>
-                            </div>
-                            <div className="card-content">
-                                <div className="lm-content-news">
-                                    <div className="lm-title-info-news">
-                                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
-                                        
-                                    </div>
-                                    <div className="lm-desc-info-news">
-                                        <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>   
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
+function News(props) {
+	const [data, setData] = useState('');
+	useEffect(() => {
+		// Atualiza o titulo do documento usando a API do browser
+		console.log('buscando da api');
+		axios
+			.get(`${process.env.REACT_APP_URL_DATABASE}/posts`)
+			.then(resp => {
+				console.log(resp);
+				setData(resp.data);
+			})
+			.catch(err => console.log(err));
+	}, []);
+	return (
+		<section className="lm-news">
+			<TitleSecundary text="Notícias" />
+			<div className="container">
+				<div className="columns">
+					{data &&
+						data.slice(0, 3).map((item, id) => (
+							<div className="column ">
+								<div className="card">
+									<div className="card-image">
+										<figure className="image">
+											<img src={Imgnotice} alt="Vem da Api" />
+										</figure>
+									</div>
+									<div className="card-content">
+										<div className="lm-content-news">
+											<div className="lm-title-info-news">
+												<h3>{item.title}</h3>
+											</div>
+											<div className="lm-desc-info-news">
+												<p>{item.description}</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						))}
+				</div>
+			</div>
+		</section>
+	);
 }
 
-export default News
+export default News;

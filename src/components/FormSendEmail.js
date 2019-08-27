@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Select from 'react-select';
 import axios from 'axios';
 import './Contact.css';
 
@@ -14,7 +13,7 @@ export default function Contact() {
 		if (email === '' || name === '' || telefone === '' || areaAtuacao === '' || message === '') {
 			alert('Preencha todos os campos ');
 		}
-		axios.post('https://calm-hamlet-35252.herokuapp.com/email', {
+		axios.post(`${process.env.REACT_APP_URL_DATABASE}/email`, {
 			name,
 			message,
 			telefone,
