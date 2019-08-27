@@ -25,6 +25,7 @@ export default function Navbar() {
                         <div className="navbar-end lm-menu">
                             <Link className="navbar-item"  to="/">Home</Link>
                             <Link className="navbar-item" to="/sobre">Sobre</Link>
+                            <Link className="navbar-item" to="/advogados">Advogados</Link>
                             <Link className="navbar-item" to="/noticias">Notícias</Link>
                             <Link className="navbar-item" to="/contatos">Contatos</Link>
                         </div>

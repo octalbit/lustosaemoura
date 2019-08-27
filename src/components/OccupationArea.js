@@ -1,7 +1,7 @@
 import React from 'react'
 import './OccupationArea.css'
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import TitleSecondary from './TitleSecondary';
 import Icon1 from  '../assets/img/emp.svg';
 import Icon2 from  '../assets/img/fan.svg';
@@ -116,7 +116,7 @@ export default function OccupationArea() {
                                 <div className="lm-content-item">
                                     <h4>Direito Administrativo</h4>
                                     <p>Nossos serviços incluem consultoria administrativa e atuação no contencioso.</p>
-                                  
+
                                 </div>
                             </div>
                         </div>
