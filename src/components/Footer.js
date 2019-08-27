@@ -12,8 +12,13 @@ export default function Footer() {
 					<div className="column">
 						<div className="lm-footer-sobre">
 							<h3 className="lm-title-footer">Sobre</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-							<Link to="/sobre" className="lm-btn">Consulta</Link>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+								industry's standard dummy text ever since the 1500s.
+							</p>
+							<Link to="/sobre" className="lm-btn">
+								Consulta
+							</Link>
 						</div>
 					</div>
 					<div className="column">
@@ -21,33 +26,75 @@ export default function Footer() {
 							<h3 className="lm-title-footer">Contatos</h3>
 							<p>Avenida Desembargador Amaral, n° 221, Centro, Amarante - PI, 64400-000</p>
 							<p>Avenida Alberto Leal Nunes, n° 396, Centro, Regeneração - PI, 64490-000</p>
-							<p><strong>Tel: </strong>(86) 9 9851-3970 - Amarante<br />
-							<strong>Tel: </strong>(86) 9 9469-4942 - Regeneração</p>
-							<p><strong>E-mail: </strong>vicenteemoura@gmail.com</p>
+							<p>
+								<strong>Tel: </strong>(86) 9 9851-3970 - Amarante<br />
+								<strong>Tel: </strong>(86) 9 9469-4942 - Regeneração
+							</p>
+							<p>
+								<strong>E-mail: </strong>vicenteemoura@gmail.com
+							</p>
 						</div>
 					</div>
 					<div className="column">
 						<div className="lm-footer-links">
 							<h3 className="lm-title-footer">Links Úteis</h3>
 							<ul>
-								<li><a target="blanck" href="http://www.oabpi.org.br/"><i class="fas fa-caret-right"></i> OAB-PI</a></li>
-								<li><a target="blanck" href="https://www.sefaz.pi.gov.br/"><i class="fas fa-caret-right"></i> SEFAZ -PI</a></li>
-								<li><a target="blanck" href="http://www.pgfn.fazenda.gov.br/"><i class="fas fa-caret-right"></i> PGNF</a></li>
-								<li><a target="blanck" href="http://www.agu.gov.br/"><i class="fas fa-caret-right"></i> AGU</a></li>
-								<li><a target="blanck" href="http://portal.stf.jus.br/"><i class="fas fa-caret-right"></i> STF</a></li>
-								<li><a target="blanck" href="http://www.stj.jus.br/sites/portalp/Inicio"><i class="fas fa-caret-right"></i> STJ</a></li>
-								<li><a target="blanck" href="https://www.mppi.mp.br/internet/"><i class="fas fa-caret-right"></i> MP-PI</a></li>
-								<li><a target="blanck" href="http://www.mpf.mp.br/"><i class="fas fa-caret-right"></i> MPF</a></li>
+								<li>
+									<a target="blanck" href="http://www.oabpi.org.br/">
+										<i class="fas fa-caret-right" /> OAB-PI
+									</a>
+								</li>
+								<li>
+									<a target="blanck" href="https://www.sefaz.pi.gov.br/">
+										<i class="fas fa-caret-right" /> SEFAZ -PI
+									</a>
+								</li>
+								<li>
+									<a target="blanck" href="http://www.pgfn.fazenda.gov.br/">
+										<i class="fas fa-caret-right" /> PGNF
+									</a>
+								</li>
+								<li>
+									<a target="blanck" href="http://www.agu.gov.br/">
+										<i class="fas fa-caret-right" /> AGU
+									</a>
+								</li>
+								<li>
+									<a target="blanck" href="http://portal.stf.jus.br/">
+										<i class="fas fa-caret-right" /> STF
+									</a>
+								</li>
+								<li>
+									<a target="blanck" href="http://www.stj.jus.br/sites/portalp/Inicio">
+										<i class="fas fa-caret-right" /> STJ
+									</a>
+								</li>
+								<li>
+									<a target="blanck" href="https://www.mppi.mp.br/internet/">
+										<i class="fas fa-caret-right" /> MP-PI
+									</a>
+								</li>
+								<li>
+									<a target="blanck" href="http://www.mpf.mp.br/">
+										<i class="fas fa-caret-right" /> MPF
+									</a>
+								</li>
 							</ul>
-						</div>	
+						</div>
 					</div>
 					<div className="column">
 						<div className="lm-noticias-footer">
 							<h3 className="lm-title-footer">Últimas noticias</h3>
 							<ul>
-								<li><i class="fas fa-caret-right"></i> Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-								<li><i class="fas fa-caret-right"></i> Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-								<li><i class="fas fa-caret-right"></i> Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+								<li>
+									<i class="fas fa-caret-right" /> Contrary to popular belief, Lorem Ipsum is not simply random text.
+								</li>
+								<li>
+									<i class="fas fa-caret-right" /> Contrary to popular belief, Lorem Ipsum is not simply random text.
+								</li>
+								<li>
+									<i class="fas fa-caret-right" /> Contrary to popular belief, Lorem Ipsum is not simply random text.
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -56,11 +103,13 @@ export default function Footer() {
 					<div className="container">
 						<div className="lm-copy">
 							<p>© 2019 Lustosa e Moura - Advocacia e Consultorio Juridico.</p>
-							<img src={Brandft} alt="Octalbit" />
+							<a href="http://octalbit.github.io" target="_blank">
+								<img src={Brandft} alt="Octalbit" />
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-	)
+	);
 }
