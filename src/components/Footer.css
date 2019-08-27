@@ -8,17 +8,17 @@
     background-color: var(--featured);
     padding: 70px 0px;
   }
-  
+
   .lm-content-footer {
     box-shadow: 0px 1px 0px var(--featured-dark);
     padding-bottom: 30px;
   }
-  
+
   .lm-footer-sobre {
     width: 100%;
     height: 100%;
   }
-  
+
   .lm-title-footer {
     font-family: var(--font-secondary);
     font-weight: lighter;
@@ -26,13 +26,13 @@
     color: var(--secondary);
     padding: 0px 0px 30px 0px;
   }
-  
+
   .lm-footer-sobre > p {
     color: var(--light);
     line-height: 1.8rem;
     padding: 0px 10px 30px 0px;
   }
-  
+
   .lm-footer-sobre > .lm-btn {
     color: var(--secondary);
     padding: 8px 40px;
@@ -42,13 +42,13 @@
     text-transform: uppercase;
     transition: 0.3s;
   }
-  
+
   .lm-footer-sobre > .lm-btn:hover {
     color: var(--featured);
     background-color: var(--secondary);
     transition: 0.3s;
   }
-  
+
   .lm-footer-links > ul li i {
     color: var(--secondary);
     margin-right: 10px;
@@ -62,39 +62,60 @@
   .lm-footer-links > ul li a:hover {
     color: var(--secondary);
   }
-  
+
   .lm-footer-contact p {
     color: var(--light);
     padding: 0px 0px 8px 0px;
   }
-  
+
   .lm-footer-contact p strong {
     color: var(--light);
   }
-  
+
   .lm-noticias-footer ul li i {
     color: var(--secondary);
     margin-right: 10px;
   }
-  
+
   .lm-noticias-footer ul li {
     color: var(--light);
     padding: 0px 0px 8px 0px;
     font-family: var(--font-secondary);
   }
-  
+
   .lm-copy {
     padding-top: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .lm-copy p {
     color: var(--light);
   }
-  
+
   .lm-copy img {
    max-width: 120px;
   }
-  
+
+  /* mobile */
+
+  @media (max-width: 600px) {
+    .lm-content-footer {
+      box-shadow: 0px 1px 0px var(--featured-dark);
+      padding-bottom: 30px;
+      padding: 0px 15px 30px 15px;
+    }
+    .lm-copy {
+      padding-top: 70px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lm-copy p {
+      color: var(--light);
+      max-width: 70%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }

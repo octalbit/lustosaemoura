@@ -13,8 +13,7 @@ export default function Footer() {
 						<div className="lm-footer-sobre">
 							<h3 className="lm-title-footer">Sobre</h3>
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-								industry's standard dummy text ever since the 1500s.
+								LUSTOSA E MOURA - ADVOCACIA E CONSULTORIA JURÍDICA é um escritório de advocacia localizado em Amarante - PI e Regeneração - PI.
 							</p>
 							<Link to="/contatos" className="lm-btn">
 								Consulta
@@ -103,7 +102,7 @@ export default function Footer() {
 					<div className="container">
 						<div className="lm-copy">
 							<p>© 2019 Lustosa e Moura - Advocacia e Consultorio Juridico.</p>
-							<a href="http://octalbit.github.io" target="_blank">
+							<a href="http://octalbit.github.io" target="blank">
 								<img src={Brandft} alt="Octalbit" />
 							</a>
 						</div>

@@ -23,7 +23,7 @@ export default props =>
 								<li><i className="fab fa-instagram"></i></li>
 							</ul>
 							<p>
-								It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+								LUSTOSA E MOURA - ADVOCACIA E CONSULTORIA JURÍDICA é um escritório de advocacia localizado em Amarante - PI e Regeneração - PI.
 							</p>
 						</div>
 					</div>

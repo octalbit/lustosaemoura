@@ -1,0 +1,46 @@
+@import '../../assets/css/config.css';
+/* Area de atuação */
+.lm-occupationArea-page {
+  width: 100%;
+}
+
+.lm-content-page-occupationArea {
+  width: 100%;
+  padding: 70px 0px;
+}
+
+.card-oa {
+  width: 100%;
+  height: 400px;
+  background-color: var(--light-medium);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-oa > .lm-card-avatar {
+  margin-bottom: 30px;
+}
+.card-oa > h3 {
+  font-weight: 900;
+  font-family: var(--font-secondary);
+  margin-bottom: 20px;
+}
+.card-oa > p {
+  line-height: 1.8rem;
+  max-width: 80%;
+}
+
+/*  mobile */
+
+  @media (max-width: 600px) {
+    .lm-content-page-occupationArea {
+      padding: 70px 15px;
+    }
+    .card-oa {
+      height: 100%;
+      padding: 50px 0px;
+    }
+  }

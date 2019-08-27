@@ -13,10 +13,10 @@ export default function NavbarInfo() {
                             <i className="fas fa-phone-alt"></i> <a target="blanck" href="http://api.whatsapp.com/send?1=pt_BR&phone=5586994694942">+55 86 9 9469-4942</a>
                         </div>
                         <div className="box-info">
-                            <i className="fas fa-envelope"></i> <Link href="">lustosaemoura@gmail.com</Link>
+                            <i className="fas fa-envelope"></i> <Link href="mailto:lustosamoura9@gmail.com">lustosaemoura@gmail.com</Link>
                         </div>
                         <div className="box-info">
-                            <i className="fas fa-comment"></i> <Link href="">Solicite uma consulta</Link>
+                            <i className="fas fa-comment"></i> <Link to="/contatos">Solicite uma consulta</Link>
                         </div>
                     </div>
                     <div className="box-social">
