@@ -28,19 +28,19 @@ export default function About() {
                   <div className="column">
                     <div className="lm-desc-about-page">
                       <h3>Missão</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh ex, cursus eget porta eget, consequat quis nisi. Nullam tincidunt gravida augue nec tempor. Nunc eu velit dictum, dignissim eros quis, consectetur ligula.</p>
+                      <p>Prestar serviços jurídicos com excelência, oferecendo soluções inovadoras para obtenção de resultados expressivos que garantam a satisfação de seus clientes.</p>
                     </div>
                   </div>
                   <div className="column">
                   <div className="lm-desc-about-page">
                     <h3>Visão</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh ex, cursus eget porta eget, consequat quis nisi. Nullam tincidunt gravida augue nec tempor. Nunc eu velit dictum, dignissim eros quis, consectetur ligula.</p>
+                    <p>Manter-se como referência nos segmentos em que atua, sendo sempre reconhecida pelos seus clientes como uma empresa moderna, inovadora e eficiente.</p>
                   </div>
                   </div>
                   <div className="column">
                   <div className="lm-desc-about-page">
                     <h3>Valores</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh ex, cursus eget porta eget, consequat quis nisi. Nullam tincidunt gravida augue nec tempor. Nunc eu velit dictum, dignissim eros quis, consectetur ligula.</p>
+                    <p>Integridade e Ética. Atuar de forma integra e ética na condução dos negócios e na relação com seus colaboradores.</p>
                   </div>
                   </div>
                 </div>

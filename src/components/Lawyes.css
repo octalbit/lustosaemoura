@@ -15,7 +15,7 @@
     text-transform: uppercase;
     font-size: var(--font-size-seven);
     letter-spacing: .1rem;
-  
+
     color: var(--darker);
   }
   .lm-info-lawyes span {
@@ -25,24 +25,17 @@
     text-transform: uppercase;
     font-size: var(--font-size-eight);
     letter-spacing: .1rem;
-  
+
     color: var(--dark-low);
   }
   .lm-info-lawyes p {
     display: block;
     text-align: center;
+    padding: 0px 15px;
+    font-size: var(--font-size-nine);
+    color: var(--dark-low);
+    line-height: 1.8rem;
   }
-  .lm-info-lawyes p a {
-    color: var(--secondary);
-  }
-  .lm-social-icons-cord {
-    display: block;
-    text-align: center;
-  }
-  .lm-social-icons-cord i {
-   margin: 20px;
-   color: var(--darker);
-  }
-  .lm-social-icons-cord i:hover {
-    color: var(--secondary);
+  .margim-bottom {
+    margin-bottom: 70px;
   }
