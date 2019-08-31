@@ -86,7 +86,7 @@ export default props =>
             <div className="card-content">
                 <div className="lm-info-lawyes">
                     <h4>DR. DHYLSON DA SILVA</h4>
-                    <span>Advogada</span>
+                    <span>Advogado</span>
                     <p>OAB PI 16.620, graduado Bacharel em Direito na Universidade Estadual do Piauí-UESPI, Pós Graduado em Gestão Pública pela Universidade Federal do Piauí-UFPI. Atua nas áreas:  Previdenciária, Trabalhista, Criminal, Consumidor.</p>
                 </div>
             </div>
@@ -102,7 +102,7 @@ export default props =>
             <div className="card-content">
                 <div className="lm-info-lawyes">
                     <h4>DR. LUIS RICARDO RODRIGUES</h4>
-                    <span>Advogada</span>
+                    <span>Advogado</span>
                     <p>OAB-PI 18.096, Bacharel em direito na Universidade Estadual do Piauí-UESPI. Atua nas áreas: Cível, Trabalhista e Previdenciária.</p>
                 </div>
             </div>
