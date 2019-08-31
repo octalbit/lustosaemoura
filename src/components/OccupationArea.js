@@ -21,7 +21,7 @@ export default function OccupationArea() {
             />
             <div className="container">
                 <div className="lm-content-occupation-area">
-                    <div className="columns">
+                    <div className="columns padding-mobile">
                         <div className="column">
                             <div className="lm-box-item">
                                 <div className="icon">
@@ -71,7 +71,7 @@ export default function OccupationArea() {
                             </div>
                         </div>
                     </div>
-                    <div className="columns">
+                    <div className="columns padding-mobile">
                         <div className="column">
                             <div className="lm-box-item">
                                 <div className="icon">

@@ -16,14 +16,14 @@
     padding: 60px 0px;
   }
   
-  .lm-box-hero > .title{
+  .lm-box-hero > .title {
     font-size: var(--font-size-one);
     padding: 40px 0px 60px 0px;
     color: var(--light);
     font-family: var(--font-secondary);
   }
   
-  .lm-box-hero > .subtitle{
+  .lm-box-hero > .subtitle {
     font-size: var(--font-size-seven);
     padding: 0px 0px 40px 0px;
     color: var(--light-medium);
@@ -48,4 +48,19 @@
     color: var(--secondary);
     background-color: var(--featured-dark);
     transition: 0.3s;
+  }
+
+  @media (max-width: 1024px) {
+    
+
+  }
+
+  @media (max-width: 768px) {
+    .lm-box-hero > .title {
+      font-size: var(--font-size-four); 
+      padding: 40px 15px 40px 15px;
+    }
+    .lm-box-hero > .subtitle { 
+      padding: 0px 15px 40px 15px;
+    }
   }

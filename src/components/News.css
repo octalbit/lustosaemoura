@@ -29,3 +29,13 @@
     font-size: var(--font-size-eight);
     line-height: 1.8rem;
   }
+  @media (max-width: 1024px) {
+    
+  }
+
+  @media (max-width: 768px) {
+    .lm-news {
+   
+    padding: 70px 15px;
+  }
+  }

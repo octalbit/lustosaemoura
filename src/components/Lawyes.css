@@ -39,3 +39,21 @@
   .margim-bottom {
     margin-bottom: 70px;
   }
+
+  @media (max-width: 1024px) {
+    .lm-card-lawyes {
+    padding: 70px 15px;
+    }
+    .padding-mobile {
+      padding: 0px 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .padding-mobile {
+      padding: 0px 15px;
+    }
+    .lm-card-lawyes {
+    padding: 70px 15px;
+    }
+  }

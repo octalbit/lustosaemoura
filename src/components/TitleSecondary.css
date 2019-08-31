@@ -30,3 +30,22 @@
     margin: 20px auto 0px;
     background-color: var(--secondary);
   }
+
+   @media (max-width: 1024px) {
+    .lm-title-secondary h3 {
+      padding: 0px 15px 20px 15px;
+    }
+    .lm-title-secondary p {
+      padding: 0px 15px 0px 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .lm-title-secondary h3 {
+      padding: 0px 15px 20px 15px;
+    }
+    .lm-title-secondary p {
+      padding: 0px 15px 0px 15px;
+    }
+
+  }

@@ -9,7 +9,7 @@ import Imgric from '../assets/img/imgric.jpg';
 
 export default props =>
 <>
-<div className="columns lm-card-lawyes">
+<div className="columns padding-mobile lm-card-lawyes ">
     <div className="column ">
         <div className="card">
             <div className="card-image">
@@ -59,7 +59,7 @@ export default props =>
         </div>
     </div>
 </div>
-<div className="columns">
+<div className="columns padding-mobile">
     <div className="column">
     <div className="card">
             <div className="card-image">

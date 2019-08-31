@@ -19,7 +19,7 @@ export default function Navbar() {
                             <Link className="navbar-item" to="/"><img src={Brand} alt="Lustosa e Moura" /></Link>
                         </div>
                         <div className="lm-menu">
-                                <Link className="navbar-item"  to="/">Home</Link>
+                                <Link className="navbar-item" to="/">Home</Link>
                                 <Link className="navbar-item" to="/sobre">Sobre</Link>
                                 <Link className="navbar-item" to="/area-de-atuacao">Áreas de atuação</Link>
                                 <Link className="navbar-item" to="/advogados">Advogados</Link>

@@ -41,3 +41,23 @@
     background-color: var(--featured-dark);
     color: var(--secondary);
   }
+
+  @media (max-width: 1024px) {
+    .lm-content-about h3 {
+      font-size: var(--font-size-six);
+      padding: 0px 15px 40px 15px;
+    }
+    .lm-content-about p {
+      padding: 0px 15px 60px 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .lm-content-about h3 {
+      font-size: var(--font-size-six);
+      padding: 0px 15px 30px 15px;
+    }
+    .lm-content-about p {
+      padding: 0px 15px 40px 15px;
+    }
+  }
