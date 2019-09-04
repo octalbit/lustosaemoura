@@ -8,19 +8,33 @@ export default function Contact() {
 	const [telefone, setTelefone] = useState('');
 	const [areaAtuacao, setareaAtuacao] = useState('');
 	const [message, setMessage] = useState('');
+	const [sucessMessage, setSucessMessage] = useState(false);
 
 	function handleSubmit(event) {
 		if (email === '' || name === '' || telefone === '' || areaAtuacao === '' || message === '') {
 			alert('Preencha todos os campos ');
 		}
-		axios.post(`${process.env.REACT_APP_URL_DATABASE}/email`, {
-			name,
-			message,
-			telefone,
-			email,
-			areaAtuacao
-		});
-		alert('Mensagem enviada com sucesso !');
+		axios
+			.post(`${process.env.REACT_APP_URL_DATABASE}/email`, {
+				name,
+				message,
+				telefone,
+				email,
+				areaAtuacao
+			})
+			.then(resp => {
+				if(resp.status === 200) {
+					setSucessMessage(true);
+					setName('');
+					setEmail('');
+					setTelefone('');
+					setareaAtuacao('');
+					setMessage('')
+				}
+			})
+			.catch(err => {
+				alert('Alguma coisa deu errado, por favor tente novamente.');
+			});
 		event.preventDefault();
 	}
 
@@ -36,6 +50,11 @@ export default function Contact() {
 
 	return (
 		<form className="lm-form-contact" onSubmit={handleSubmit}>
+			{sucessMessage && 
+				<h2 style={{ color: 'red', alignSelf: 'center', textAlign: 'center', fontSize: '3em', marginBottom: 15, fontFamily: 'Roboto-BoldCondensed' }}>
+					Mensagem enviada com sucesso.
+				</h2>
+			}
 			<div className="columns">
 				<div className="column">
 					<div className="field">
