@@ -1,6 +1,20 @@
 @import '../../assets/css/config.css';
 .lm-notice {
-  padding: 70px 0px;
+  width: 100%;
+  padding: 10px;
+}
+.lm-notice-date span {
+  color: var(--dark-medium);
+  font-size: var(--font-size-nine);
+  font-weight: 600;
+}
+.lm-title-notice h3 {
+  color: var(--secondary);
+  font-size: var(--font-size-six);
+}
+.lm-descricao-notice p {
+  color: var(--dark-medium);
+  font-size: var(--font-size-nine);
 }
 .lm-btn-main {
   display: block;

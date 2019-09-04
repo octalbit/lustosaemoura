@@ -13,14 +13,8 @@ export default function About() {
 						<div className="column">
 							<TheNotice />
 						</div>
-						<div className="column">
-							<TheNotice />
-						</div>
-						<div className="column">
-							<TheNotice />
-						</div>
+						<div className="column">kkk</div>
 					</div>
-					<button className="lm-btn-main">Carregar mais</button>
 				</div>
 			</div>
 		</section>

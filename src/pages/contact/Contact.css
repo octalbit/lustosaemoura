@@ -23,3 +23,16 @@
   color: var(--secondary);
   margin: 0px 10px;
 }
+
+@media (max-width: 1024px) {
+  .lm-content-contact {
+    padding: 70px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lm-content-contact {
+    padding: 70px 15px;
+  }
+
+}
